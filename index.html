@@ -3,82 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="b29bfe6b3f6b8afa" />
-    <title>MR.Donat - Магазин пончиков</title>
+    <title>FoodExpress - Доставка вкуснейшей еды</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>MR.Donat</h1>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <span>FoodExpress</span>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <div class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>8 (916) 491-78-51</span>
+                    </div>
+                    <div class="work-time">
+                        <i class="fas fa-clock"></i>
+                        <span>Ежедневно: 10:00 - 23:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#menu-section"><i class="fas fa-burger"></i> Меню</a></li>
+                    <li><a href="#delivery"><i class="fas fa-truck-fast"></i> Доставка</a></li>
+                    <li><a href="#reviews"><i class="fas fa-comment"></i> Отзывы</a></li>
+                    <li><a href="#contacts"><i class="fas fa-map-marker-alt"></i> Контакты</a></li>
+                </ul>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#Hit">Популярное</a></li>
-                <li><a href="#menu">Меню</a></li>
-                <li><a href="#order">Заказ</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="hero">
-        <h2>Сладкие моменты с MR.Donat</h2>
-        <p>Попробуйте наши невероятные пончики!</p>
-        <a href="#menu" class="btn">Посмотреть меню</a>
-    </section>
-
-    <main>
-        <section id="about">
-            <h2>______________________________________________________________О нас__________________________________________________________________</h2>
-            <p class="about-text">Добро пожаловать в MR.Donat! Мы предлагаем самые вкусные и свежие пончики в городе. У нас есть широкий выбор начинки и глазури на любой вкус!</p>
-            <img src="yami.jpg" alt="Пончик 1" class="donut-img">
+    <!-- Основное содержимое -->
+    <main class="main-content">
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <h1>Доставка вкуснейшей еды за 60 минут!</h1>
+                <p>Более 500 блюд на выбор - пицца, суши, бургеры, десерты и многое другое</p>
+                <a href="#menu-section" class="btn btn-primary">Смотреть меню</a>
+            </div>
         </section>
 
-        <section id="Hit">
-            <h2>__________________________________________________________ТОВАРЫ НЕДЕЛИ!________________________________________________________               </h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <h3>Клубничный пончик</h3>
-                    <img src="stars.jpg" alt="Клубничный пончик" class="donut-img">
-                </div>
-                <div class="menu-item">
-                    <h3>Шоколадный пончик</h3>
-                    <img src="AgroSarit.jpg" alt="Шоколадный пончик" class="donut-img">
-
-                </div>
-                <div class="menu-item">
-                    <h3>Банановый пончик</h3>
-                    <img src="Srarrrrr.jpg" alt="Банановый пончик" class="donut-img">
+        <!-- Преимущества -->
+        <section class="features">
+            <div class="container">
+                <h2>Почему выбирают нас</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <i class="fas fa-stopwatch"></i>
+                        <h3>Быстро</h3>
+                        <p>Доставка за 60 минут или пицца бесплатно</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Свежие продукты</h3>
+                        <p>Только качественные ингредиенты</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-ruble-sign"></i>
+                        <h3>Доступно</h3>
+                        <p>Средний чек всего 500 рублей</p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-grin-stars"></i>
+                        <h3>Вкусно</h3>
+                        <p>Более 95% довольных клиентов</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="menu">
-            <h3>_________________________________________________________________________________МЕНЮ_____________________________________________________________________________________
-                ___________________________________НАПИТКИ______________________________________|_________________________________________ЗАКУСКИ______________________________________  
-            Латте...................99р ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ| Клуничный пончик......................59рㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-            Капучино.............99рㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ|Шоколадный пончик....................59рㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-            Американо..........79рㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ|Банановый пончик.......................59рㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-            Экспрессо...........79р</h3>
+        <!-- Популярные блюда -->
+        <section class="popular">
+            <div class="container">
+                <h2>Популярные блюда</h2>
+                <div class="food-grid">
+                    <div class="food-card">
+                        <img src="https://via.placeholder.com/300x200?text=Пицца+Пепперони" alt="Пицца Пепперони">
+                        <h3>Пицца Пепперони</h3>
+                        <p>Острая колбаска, сыр моцарелла, томатный соус</p>
+                        <div class="price">399 ₽</div>
+                        <a href="#order-form" class="btn btn-food">Заказать</a>
+                    </div>
+                    
+                    <div class="food-card">
+                        <img src="https://via.placeholder.com/300x200?text=Сет+Калифорния" alt="Сет Калифорния">
+                        <h3>Сет Калифорния</h3>
+                        <p>24 суши: филадельфия, калифорния, унаги</p>
+                        <div class="price">899 ₽</div>
+                        <a href="#order-form" class="btn btn-food">Заказать</a>
+                    </div>
+                    
+                    <div class="food-card">
+                        <img src="https://via.placeholder.com/300x200?text=Чизбургер+XXL" alt="Чизбургер XXL">
+                        <h3>Чизбургер XXL</h3>
+                        <p>Говяжья котлета 200г, сыр чеддер, соус</p>
+                        <div class="price">299 ₽</div>
+                        <a href="#order-form" class="btn btn-food">Заказать</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="order">
-            <h2>Как заказать</h2>
-            <p class="order-text">Вы можете сделать заказ позвонив по номеру горячей линии представленной на сайте снизу, сказав понравившиеся пончики и указав количество. Мы доставим свежие пончики прямо к вашей двери в такой упаковке!В случае возникновения проблемы пишите на сайт поддержки.</p>
-            <img src="https://avatars.mds.yandex.net/i?id=45ac05f996f7965759743526de463955_l-5115981-images-thumbs&n=13" alt="Как заказать" class="donut-img">
+        <!-- Полное меню (скрытое/раскрывающееся) -->
+        <section id="menu-section" class="full-menu">
+            <div class="container">
+                <h2>Наше меню</h2>
+                
+                <!-- Чекбокс для открытия/закрытия меню без JS -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="btn btn-menu-toggle">Показать всё меню</label>
+                
+                <div class="menu-categories">
+                    <!-- Пицца -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-pizza-slice"></i> Пицца</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Пепперони</h4>
+                                <p>Острая колбаска, моцарелла, томатный соус</p>
+                                <div class="item-price">399 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Маргарита</h4>
+                                <p>Моцарелла, томаты, томатный соус, базилик</p>
+                                <div class="item-price">349 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>4 Сыра</h4>
+                                <p>Моцарелла, пармезан, дор блю, чеддер</p>
+                                <div class="item-price">449 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Суши -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-fish"></i> Суши и роллы</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Филадельфия</h4>
+                                <p>Лосось, сливочный сыр, огурец, рис</p>
+                                <div class="item-price">249 ₽ (6 шт)</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Калифорния</h4>
+                                <p>Краб, авокадо, огурец, икра, майонез</p>
+                                <div class="item-price">229 ₽ (6 шт)</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Унаги</h4>
+                                <p>Угорь, сливочный сыр, огурец, соус унаги</p>
+                                <div class="item-price">299 ₽ (6 шт)</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Бургеры -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-hamburger"></i> Бургеры</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Чизбургер</h4>
+                                <p>Говяжья котлета, сыр чеддер, соус</p>
+                                <div class="item-price">199 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Чикенбургер</h4>
+                                <p>Куриная котлета, салат, помидор, соус</p>
+                                <div class="item-price">179 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Вегги</h4>
+                                <p>Овощная котлета, авокадо, салат, соус</p>
+                                <div class="item-price">219 ₽</div>
+                                <a href="#order-form" class="btn btn-order">+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contacts">
-            <h2>______________________________________________________________Контакты______________________________________________________________</h2>
-            <p>Телефон: <a href="tel:+1234567890">+7 (916) 491 78 51</a></p>
-            <p>Email: <a href="/cdn-cgi/l/email-olegkolodeev430@gmail.com"><span class="cf_email" data-cfemail="2f464149406f424b40414e5b014c4042">[email&#160;protected]</span></a></p>
+        <!-- Форма заказа -->
+        <section id="order-form" class="order-form-section">
+            <div class="container">
+                <h2>Оформить заказ</h2>
+                <form class="order-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Адрес доставки:</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="delivery">Время доставки:</label>
+                        <input type="text" id="delivery" placeholder="Например, 19:30">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">Комментарий к заказу:</label>
+                        <textarea id="comment" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Способ оплаты:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="payment" checked>
+                                <span>Наличными курьеру</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="payment">
+                                <span>Картой онлайн</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="payment">
+                                <span>Картой курьеру</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Оформить заказ</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2>Отзывы наших клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <h4>Яша Лава</h4>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Не нравится."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <h4>Леон228</h4>
+                                <div class="rating">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>"Ужасно 4 звезды из за жалости."</p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <h4>Жиртрес</h4>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Пожираю бургеры каждый день все норм."</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 MR.Donat. Все права защищены.</p>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FoodExpress</h3>
+                    <p>Доставка вкуснейшей еды по всему городу. Работаем с 1924 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#menu-section">Меню</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#promo">Акции</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" id="contacts">
+                    <h3>Контакты</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Выдуманый, ул. Выдуманианская, 17</li>
+                        <li><i class="fas fa-phone"></i> 8 (916) 491-78-51 </li>
+                        <li><i class="fas fa-envelope"></i> olegkolodeev430@gmail.com </li>
+                        <li><i class="fas fa-clock"></i> Ежедневно: 10:00 - 23:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Подписка</h3>
+                    <p>Узнавайте первыми о новых блюдах и акциях!</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-subscribe">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FoodExpress. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
     </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</body>
 </html>
